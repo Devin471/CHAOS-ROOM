@@ -1,0 +1,14 @@
+{
+  "name": "chaos-room",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Real-time 2-8 player party game with hidden roles, bluffing, voting and mini-games.",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run start --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
